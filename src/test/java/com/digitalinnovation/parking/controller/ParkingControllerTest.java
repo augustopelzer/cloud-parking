@@ -9,11 +9,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-
-import static org.junit.jupiter.api.Assertions.*;
-
+//extends AbstractContainerBase se quiser usar o Container de Teste Abstract
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class ParkingControllerIT {
+class ParkingControllerTest  {
 
     @LocalServerPort
     private int randomPort;
