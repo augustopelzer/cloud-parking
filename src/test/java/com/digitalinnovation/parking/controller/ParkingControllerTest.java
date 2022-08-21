@@ -25,6 +25,8 @@ class ParkingControllerTest  {
     @Test
     void whenfindAllThenCheckResult() {
         RestAssured.given()
+                .auth()
+                .basic("user", "Dio@123456")
                 .when()
                 .get("/parking")
                 .then()
